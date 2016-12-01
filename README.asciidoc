@@ -16,7 +16,8 @@ You can pull and run latest builded version from DockerHub image registry:
 docker run --name myjenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins_home:/var/jenkins_home spyl/jenkins-with-latest-awscli
 ----
 
-Docker will use /var/jenkins_home as Docker volume. After stop container, you will able to re-use your Jenkins settings with
+Docker will use /var/jenkins_home as Docker volume (you can periodically backup this directory with settings). 
+After stop container, you will able to re-use your Jenkins settings with.
 [source, shell]
 ----
 docker start myjenkins
