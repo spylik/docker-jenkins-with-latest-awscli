@@ -1,6 +1,6 @@
 # docker-jenkins-with-latest-awscli
 
-This repo contain Dockerfile to build Docker image from official Jenkins image with latest Amazon awscli.
+This repo contain Dockerfile to build Docker image from official Jenkins image with latest [Amazon awscli](https://aws.amazon.com/cli/).
 
 ## Why?
 
