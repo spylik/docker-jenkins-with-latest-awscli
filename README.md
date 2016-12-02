@@ -9,7 +9,7 @@ Due this, Jenkins do not able to pull from [AWS CodeCommit](https://aws.amazon.c
 
 ## Usage
 
-You can pull image from docker hub, or you can go with [Makefile](Makefile) (RECOMMENDED) which will take care allthings and it's easy to make it as part of [Docker Compose](https://docs.docker.com/compose/) project.
+You can pull image from docker hub and run it manually, or you can go with [Makefile](Makefile) (RECOMMENDED) which will take care allthings and it's easy to make it as part of [Docker Compose](https://docs.docker.com/compose/) project.
 ```
 $ git clone https://github.com/spylik/docker-jenkins-with-latest-awscli
 $ cd docker-jenkins-with-latest-awscli
