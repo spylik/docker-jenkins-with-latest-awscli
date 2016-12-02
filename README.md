@@ -15,7 +15,7 @@ $ git clone https://github.com/spylik/docker-jenkins-with-latest-awscli
 $ cd docker-jenkins-with-latest-awscli
 $ make
 ```
-`make` will create data directory (if it not yet exists) and will handle all run and re-run (in case of restart) routine.
+`make` will create in current directory data directory (if it not yet exists) and will handle all run and re-run (in case of restart) routine.
 You will able to backup this directory and re-use your Jenkins settings and modules after every new upgrade.
 If you need some extra (for example re-build new image), run `make help`.
 
