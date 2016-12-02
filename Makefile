@@ -27,7 +27,7 @@ build: ## Build docker image from Dockerfile
 	@docker build -t $(IMGFULLNAME):$(VERSION) .
 
 ifeq ($(shell docker ps -a --format "{{.Status}}" --filter "name=$(CONTAINER_NAME)" | grep -o -m 1 -h Up), Up)
-run: ## Run docker image. If conteiner doesn not exists it will assign $CONTAINER_NAME and reuse same name in the future.
+run: ## Run docker image. It will assign default $CONTAINER_NAME and will reuse same name after restart.
 	@echo "Looks like container with name ${CONTAINER_NAME} already running. You can stop it with make stop"
 else ifeq ($(shell docker ps -a --format "{{.Status}}" --filter "name=$(CONTAINER_NAME)" | grep -o -m 1 -h 'Exited'), Exited)
 run:
@@ -40,5 +40,5 @@ run:
 	@docker run --name $(CONTAINER_NAME) $(PORTS_MAPPING) -v $(DATA_DIR):/var/jenkins_home $(IMGFULLNAME)
 endif
 
-stop: ## Stop container
+stop: ## Stop container with default name
 	@docker stop $(CONTAINER_NAME)
