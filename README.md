@@ -9,13 +9,13 @@ Due this, Jenkins do not able to pull from AWS Code Commit repos using AWS crede
 
 ## Usage
 
-You can pull image from docker hub, or you can go with [Makefile](Makefile) (RECOMMENDED) which will take care allthings.
+You can pull image from docker hub, or you can go with [Makefile](Makefile) (RECOMMENDED) which will take care allthings and it's easy to make it as port of [Docker Compose](https://docs.docker.com/compose/) project.
 ```
 $ git clone https://github.com/spylik/docker-jenkins-with-latest-awscli
 $ cd docker-jenkins-with-latest-awscli
-$ make run 
+$ make
 ```
-`make run` will create data directory (if it not yet exists) and will handle all run and re-run routine.
+`make` will create data directory (if it not yet exists) and will handle all run and re-run (in case of restart) routine.
 You will able to backup this directory and re-use your Jenkins settings and modules after every new upgrade.
 If you need some extra (for example re-build new image), run `make help`.
 
