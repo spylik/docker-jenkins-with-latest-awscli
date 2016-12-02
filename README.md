@@ -5,7 +5,7 @@ This repo contain Dockerfile to build Docker image from official Jenkins image w
 ## Why?
 
 Official image based on quite old Debian release which bundled with old awscli.
-Due this, Jenkins do not able to pull from [AWS CodeCommit](https://aws.amazon.com/codecommit/) repos using [https://aws.amazon.com/documentation/iam/](AWS IAM) credentials.
+Due this, Jenkins do not able to pull from [AWS CodeCommit](https://aws.amazon.com/codecommit/) repos using [AWS IAM](https://aws.amazon.com/documentation/iam/) credentials.
 
 ## Usage
 
