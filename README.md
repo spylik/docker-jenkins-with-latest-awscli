@@ -11,7 +11,7 @@ Due this, Jenkins do not able to pull from AWS Code Commit repos using AWS crede
 
 You can pull image from docker hub, or you can go with Makefile (RECOMMENDED) which will take care allthings.
 ```
-$ git clone github.com/spylik/docker-jenkins-with-latest-awscli
+$ git clone https://github.com/spylik/docker-jenkins-with-latest-awscli
 $ cd docker-jenkins-with-latest-awscli
 $ make run 
 ```
